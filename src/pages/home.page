@@ -1,0 +1,187 @@
+<apex:page showHeader="false" sidebar="false">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>About | Boston Biotech Conferences</title>
+<link rel="stylesheet" type="text/css" href="bbc-styles.css" />
+<link rel="stylesheet" type="text/css" href="colorbox.css" />
+
+    <script type="text/javascript" src="http://use.typekit.net/bhm3zkx.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body id="about">
+<div id="wrapper">
+  <div id="header">
+    <a id="logo" href="index.php.html"><img src="bbc-logo.png" alt="Boston Biotech Conference" /></a>
+
+<a id="navNewsletter" href="newsletter.php.html" rel="colorbox"><span>Signup for Newsletter</span></a>
+<a id="navSponsor" href="sponsorship.php.html"><span>Sponsor</span></a>
+<a id="navRegister" href="conferences.php.html"><span>Register</span></a>
+<!--<div id="careers">
+    <a href="careers.php"><strong>We're hiring: See Jobs</strong></a>
+</div>
+
+<form id="searchform">
+  <input class="box" type="text" name="search" value="Search BBC" onfocus="javascript:if (this.value == 'Search BBC') { this.value = ''; }" onblur="javascript:if (this.value == '') { this.value = 'Search BBC'; }" /><input type="image" name="submitsearch" src="images/search.gif" value="Search" />
+</form>-->
+<div id="social">
+ <span class="label">Follow Us</span>
+  <a id="navSocFB" href="http://www.facebook.com/BostonBiotechConference" target="_blank"><span>Facebook</span></a>
+  <a id="navSocTwitter" href="http://www.twitter.com/biotechconf" target="_blank"><span>Twitter</span></a>
+</div>  </div><!-- #header -->
+  <div id="nav">
+    <ul class="menu">
+    <li class="first"><a id="navHome" href="index.php.html">Home</a></li>
+    <li><a id="navAbout" href="about.php.html">About</a></li>
+    <li><a id="navConferences" href="conferences.php.html">Conferences</a>
+        <ul>
+            <li><a href="conferences.php.html">All Conferences</a></li>
+            <li><a href="ceo-meetings.php.html">CEO Meetings</a></li>
+           <li><a href="therapeutic-meetings.php.html">Therapeutic Advances</a></li>
+        </ul>
+    </li>
+    <li><a id="navGivingBack" href="giving-back.php.html">Giving Back</a></li>   
+    <li><a id="navFAQ" href="faq.php.html">FAQs</a></li>    
+    <li><a id="navVideos" href="media-gallery.php.html">Media</a></li>
+    <li><a id="navBlog" href="http://blog.bbbiotechconference.com">Expert Voices</a></li>    
+    <li><a id="navSponsorship" href="sponsorship.php.html">Sponsorship</a></li>
+    <li><a id="navContact" href="contact.php.html">Contact</a></li>
+</ul>
+<div class="clear"></div>
+  </div><!-- #nav -->
+<!--  <div id="boxes">
+    <div class="center">
+  <a href="conference-details.php?id=37"><img class="banner" src="images/l2-neuro-advance-boston.jpg" alt="Neuro Advance"/></a> 
+  <a href="conference-details.php?id=34"><img class="banner" src="images/l2-ceo-newyork.jpg" alt="NY/NJ CEO"/></a> 
+  <a href="conference-details.php?id=35"><img class="banner" src="images/l2-GenRx.jpg" alt="Genetic Rx"/></a> 
+  <a href="conference-details.php?id=36"><img class="banner" src="images/l2-sf-ceo.jpg" alt="East/West CEO"/></a> 
+  <a href="conference-details.php?id=40"><img class="banner" src="images/l2-bd-biotech.jpg" alt="BD "/></a> 
+  <a href="conference-details.php?id=38"><img class="banner" src="images/subpage-ca.jpg" alt="Cancer Advance"/></a> 
+  <a href="conference-details.php?id=39"><img class="banner" src="images/BosCEO.jpg" alt="Boston CEO"/></a> 
+</div>
+<div class="clear"></div>  </div><!-- #boxes -->
+  <div id="container">
+    <div id="sidebar">
+      <a href="testimonials.php.html"><img src="quote.jpg" alt="" /></a>    </div><!-- #sidebar -->
+    <div id="content">
+      <h2>WHY COME TO BBC?</h2>
+      <p>The Boston Biotech Conferences (BBC) are exclusive, thought-leader forums for senior biopharma executives. Each conference is highly interactive and co-hosted by healthcare industry leaders to foster discussions and facilitate information-sharing, networking and corporate development within the biopharma community.</p>
+<p>The number of participants is limited to allow for one-on-one interaction with the most influential leaders in the life sciences. &nbsp;Over the years, our attendees (many of whom come back every year) have told us that the biggest value they derive from the BBC conferences is the ability to network with the decision makers in the industry. As one of our attendees once said: &ldquo;&hellip;walk the hallways during our conference, and you can hear a few deals being hatched.&rdquo;</p>
+<h3>Our Mission</h3>
+<p>BBC's mission is to build a vibrant community of biopharma leaders, which will help to drive biopharma innovation, by convening leaders across industry and academia.</p>
+<h3>Participation As Panelists</h3>
+<p>Our conferences are invitation-only events with about 200 people, and what's special about them is the ability for top-tier people to network, discuss key issues in the industry and brainstorm in an off-the-record way.</p>
+<p>We ask many of our attendees to participate on a panel, which typically lasts about 30 minutes and allows people from different companies and organizations to contribute with their expertise. In this sense our conferences are not like those where only a few "special" people speak, and attendance is driven by others who pay to see them. <span>Ours is an exclusive networking event where many attendees contribute to the discussion.&nbsp; Attendees find that their biggest benefit is derived from the ability to share thoughts with peers in a unique, high-level, off the record manner. &nbsp;</span>&nbsp;</p>
+<p>It would be impossible to keep these conferences small and high-level if everyone who was a panelist didn't pay. However we do give a discount to panelists, recognizing that their participation helps make the meeting vibrant. For companies wanting to get their executives exposed to key deal-making and networking opportunities, our conferences are worthwhile investments.</p>    </div><!-- #content -->
+    <div class="clear"></div>
+  </div><!-- #container -->
+    <div id="footer">
+    
+<div id="footer-left"> <a href="index.html" id="logo-footer"><img src="images/bbc-logo.png" alt="Boston Biotech Conference" border="0" /></a>
+  <ul>
+    <li><a href="testimonials.php.html">Testimonials</a>&nbsp;|&nbsp;</li>
+    <li><a href="sponsorship.php.html">Sponsorship Opportunities</a>&nbsp;|&nbsp;</li>
+    <li><a href="contact.php.html">Contact</a>&nbsp;|&nbsp;</li>
+    <li><a href="conferences.php.html">Conferences</a>&nbsp;|&nbsp;</li>   
+    <li><a href="about.php.html">About</a>&nbsp;|&nbsp;</li>   
+    <li><a href="index.php.html">Home</a></li>    
+  </ul>
+  <div class="copy">All rights reserved. &copy; 2015 Boston Biotech Conference</div>
+  <!--Conference Series Sponsors-->
+  
+</div><!-- #footer-left -->
+<div id="footer-right"><a href="http://www.biopharmaexecutivecouncil.com"><img src="images/BioPharma_logo_small.jpg" alt="BioPharma Executive Council" height="35"/></a></div>
+<div class="clear"></div>
+  </div><!-- #footer -->
+</div><!-- #wrapper -->
+            
+
+<script type="text/javascript" src="gatag.js"></script>
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="jquerypp.custom.js"></script>
+<script src="modernizr.custom.17475.js"></script>
+<script src="jquery.colorbox-min.js"></script>
+<script src="jquery.elastislide.js"></script>
+<script type="text/javascript" src="jquery.validate.js.html"></script>
+<script src="dropit.js"></script>
+
+<script type="text/javascript">
+            
+        $().ready(function(){
+                $('.photos').colorbox();
+                $('a.digest').each(function(){
+                    var $href = $(this).attr('href');
+                    $(this).colorbox({href:"download.php?digest=" + $href,width:"500", height: "430", iframe:true});    
+                
+                });
+                $('a#navNominate').each(function(){
+                    var $href = $(this).attr('href');
+                    $(this).colorbox({href:$href,width:"500", height: "485", iframe:true}); 
+                
+                });
+            
+            
+            //start menu    
+            $('.menu').dropit();
+            
+            
+            
+            $(window).scroll(function(){
+                var boxesPos = $(document).scrollTop();
+                if (boxesPos >= 168){
+                    $('#boxes').addClass('fixed');  
+                    $('#tabs').addClass('fixed');   
+                    $('#detailsContainer').css('margin-top','211px');
+                }
+                else
+                {
+                    $('#boxes').removeClass('fixed');
+                    $('#tabs').removeClass('fixed');
+                    $('#detailsContainer').css('margin-top','0');                   
+                }
+            });
+            
+            
+            //validate for newsletter form
+//          jQuery.validator.messages.required = "";
+            $('#newsletterSignup').validate({
+                invalidHandler: function(e, validator) {
+                    var errors = validator.numberOfInvalids();
+                    if (errors) {
+                        var message = errors == 1
+                            ? 'You missed 1 field. It has been highlighted below'
+                            : 'You missed ' + errors + ' fields.  They have been highlighted below';
+                        $("div.error span").html(message);
+                        $("div.error").show();
+                    } else {
+                        $("div.error").hide();
+                    }
+                }
+                
+                
+            }); //end of validate()
+        });//end of .ready()
+        </script>
+    
+<script type="text/javascript">
+  //$().ready(function(){
+    //$.fn.colorbox({href:"/images/sandy.jpg", open:true});  
+  //});
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33234861-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link rel="stylesheet" href="dropit.css" type="text/css" />
+</body>
+</apex:page>

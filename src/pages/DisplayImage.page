@@ -1,0 +1,5 @@
+<apex:page showHeader="false">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Hello {!$User.FirstName & ' ' & $User.LastName}</h1>
+  <apex:image value="https://developer.salesforce.com/files/salesforce-developer-network-logo.png"/>
+</apex:page>

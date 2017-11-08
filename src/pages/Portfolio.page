@@ -1,0 +1,342 @@
+<apex:page showHeader="false" sidebar="false" cache="false" standardStylesheets="false" docType="html-5.0">
+<html lang="en">
+<head style="background-color: yellow;">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Caroline Sinadino</title>
+
+    <!-- Bootstrap Core CSS -->
+   <apex:stylesheet value="{!URLFOR($Resource.css, 'css/bootstrap.min.css')}"/>
+    <!-- Custom Fonts -->
+
+    <apex:stylesheet value="{!URLFOR($Resource.css, 'css/bootstrap.min.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.fontawesome, 'font-awesome/css/font-awesome.min.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.css, 'css/animate.min.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.css, 'css/creative.css')}"/>
+
+
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" style="color: #F05F40;" href="#page-top">Caroline Sinadino Portfolio</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+
+                        <a class="page-scroll" style="color: black;" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" style="color: black;" href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section class="no-padding" >
+        <div class="container-fluid">
+            <div class="row no-gutter">
+              <div class="col-md-8">
+
+                <!--      <apex:image style="width:1800px; height:400px;" url="{!URLFOR($Resource.img, 'img/portfolio/4.jpg')}" /> -->
+                    <!--    <apex:image url="{!$Resource.sinadino__img/img/portfolio/4.jpg}" width="1800px" height="400px;"/> -->
+                        <apex:image url="{!$Resource.HotelGloria}" width="1800px" height="400px;"/>
+
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+
+                        <apex:image url="{!URLFOR($Resource.img, 'img/portfolio/1.jpg')}" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Category
+                                </div>
+                                <div class="project-category text-faded">
+                                  <p style="font-size: 11pt;">  Project Name </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <apex:image url="{!URLFOR($Resource.img, 'img/portfolio/2.jpg')}" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+
+                          <apex:image url="{!URLFOR($Resource.img, 'img/portfolio/3.jpg')}" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                          <apex:image url="{!URLFOR($Resource.img, 'img/portfolio/4.jpg')}" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <apex:image url="{!URLFOR($Resource.img, 'img/portfolio/5.jpg')}" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <apex:image url="{!URLFOR($Resource.img, 'img/portfolio/6.jpg')}" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+
+                        <apex:image url="{!URLFOR($Resource.img, 'img/portfolio/1.jpg')}" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <apex:image url="{!URLFOR($Resource.img, 'img/portfolio/2.jpg')}" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+
+                          <apex:image url="{!URLFOR($Resource.img, 'img/portfolio/3.jpg')}" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                          <apex:image url="{!URLFOR($Resource.img, 'img/portfolio/4.jpg')}" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <apex:image url="{!URLFOR($Resource.img, 'img/portfolio/5.jpg')}" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <apex:image url="{!URLFOR($Resource.img, 'img/portfolio/6.jpg')}" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">...a bit about me</h2>
+                    <hr class="primary" />
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4 text-center">
+              </div>
+                <div class="col-md-4 text-center">
+                  <p style="text-align: center;">
+                    I am an Architect and Urbanist from Rio de Janeiro with a graduate degree in Interior Design. I have been exercising the career that I love for over 10 years and have worked in various fields such as scenography, executive projects, approval of projects for government agencies and interior design. Most of the companies I worked use AutoCad as the main developing tool, however, in the last 3 years of my career in Brazil, I had the opportunity to work also with Revit.
+                  </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary" />
+                    <p></p>
+                </div>
+                <div class="col-lg-4 text-center" >
+                   <i class="btn-linkedin"></i>
+                   <a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a>
+               </div>
+
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:carolramidan@gmail.com">Send me an email</a></p>
+                </div>
+            </div>
+            <div class="row">
+              <div>
+                 <i class="btn-linkedin"></i>
+                 <a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a>
+             </div>
+           </div>
+        </div>
+    </section>
+   <!--
+
+
+ -->
+    <!-- jQuery -->
+
+
+<apex:includeScript value="{!URLFOR($Resource.js,'js/jquery.js')}" />
+<apex:includeScript value="{!URLFOR($Resource.js,'js/jquery.easing.min.js')}" />
+<apex:includeScript value="{!URLFOR($Resource.js,'js/jquery.fittext.js')}" />
+<apex:includeScript value="{!URLFOR($Resource.js,'js/bootstrap.min.js')}" />
+<apex:includeScript value="{!URLFOR($Resource.js,'js/wow.min.js')}" />
+<apex:includeScript value="{!URLFOR($Resource.less,'less/creative.less')}" />
+
+</body>
+
+</html>
+
+</apex:page>

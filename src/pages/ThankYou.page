@@ -1,0 +1,117 @@
+<apex:page docType="html-5.0" id="siteDonationPage" Controller="ThankYouController" showHeader="false" sidebar="false" cache="false" standardStylesheets="false" >
+<!-- choose the template from your sites -->
+<apex:composition template="{!$Site.Template}">
+  <apex:define name="body">
+    <div class="pc_page_content_top"></div>
+    <div class="pc_page_content" id="pc_donations_page">
+    <div class="pc_page_content_inner">
+    <apex:pageMessages id="messageBox" />
+    <apex:outputPanel layout="none" rendered="{!IF((Basic || BasicPlus || Premmium || PremmiumPlus), true, false)}" >
+      <!-- Display to Donoations of USD$10 -->
+      <apex:outputPanel layout="none" rendered="{!Basic}">
+          <h1> Thank You for your donation of $10 </h1>
+
+          <br/>
+           <apex:dataTable styleClass="pc_record_listing_table"  value="{!pymtRecord}" var="item" >
+
+              <apex:column >
+                  <apex:facet name="header">Payment ID</apex:facet>
+                  <apex:outputField value="{!item.Id}"/>
+              </apex:column>
+
+              <apex:column >
+                  <apex:facet name="header">Payment Amount</apex:facet>
+                  <apex:outputText value="{!item.pymt__Amount__c}"/>
+              </apex:column>
+           </apex:dataTable>
+
+         <br/><br/>
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/U674gGZy8c8?autoplay=1" frameborder="0" allowfullscreen="false"></iframe>
+
+
+         </apex:outputPanel>
+
+
+         <!-- Display to Donoations of USD$30 -->
+         <apex:outputPanel layout="none" rendered="{!BasicPlus}">
+          <h1> <h1> Thank You for your donation of $30 </h1> </h1>
+
+          <br/>
+           <apex:dataTable styleClass="pc_record_listing_table"  value="{!pymtRecord}" var="item" >
+
+              <apex:column >
+                  <apex:facet name="header">Payment ID</apex:facet>
+                  <apex:outputField value="{!item.Id}"/>
+              </apex:column>
+
+              <apex:column >
+                  <apex:facet name="header">Payment Amount</apex:facet>
+                  <apex:outputText value="{!item.pymt__Amount__c}"/>
+              </apex:column>
+           </apex:dataTable>
+
+          <br/><br/>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/fNorHmN8uNc?autoplay=1" frameborder="0" allowfullscreen="false"></iframe>
+
+         </apex:outputPanel>
+
+
+         <!-- Display to Donoations of USD$50 -->
+         <apex:outputPanel layout="none" rendered="{!Premmium}">
+          <h1> Thank You for your donation of $50 </h1>
+
+          <br/>
+           <apex:dataTable styleClass="pc_record_listing_table"  value="{!pymtRecord}" var="item" >
+
+              <apex:column >
+                  <apex:facet name="header">Payment ID</apex:facet>
+                  <apex:outputField value="{!item.Id}"/>
+              </apex:column>
+
+              <apex:column >
+                  <apex:facet name="header">Payment Amount</apex:facet>
+                  <apex:outputText value="{!item.pymt__Amount__c}"/>
+              </apex:column>
+           </apex:dataTable>
+
+           <br/><br/>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/udsYX5tddj0?autoplay=1" frameborder="0" allowfullscreen="false"></iframe>
+
+
+         </apex:outputPanel>
+
+
+
+
+         <!-- Display to Donoations of USD$100 -->
+          <apex:outputPanel layout="none" rendered="{!PremmiumPlus}">
+          <h1> Thank You for your generous donation </h1>
+
+          <br/>
+           <apex:dataTable styleClass="pc_record_listing_table"  value="{!pymtRecord}" var="item" >
+
+              <apex:column >
+                  <apex:facet name="header">Payment ID</apex:facet>
+                  <apex:outputField value="{!item.Id}"/>
+              </apex:column>
+
+              <apex:column >
+                  <apex:facet name="header">Payment Amount</apex:facet>
+                  <apex:outputText value="{!item.pymt__Amount__c}"/>
+              </apex:column>
+           </apex:dataTable>
+
+         <br/><br/>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/VLq8tcEkoLU?autoplay=1" frameborder="0" allowfullscreen="false"></iframe>
+
+         </apex:outputPanel>
+
+
+
+    </apex:outputPanel>
+    </div>  <!-- end pc_page_content_inner div -->
+    </div>  <!-- end pc_page_content div -->
+    </apex:define>
+    </apex:composition>
+</apex:page>

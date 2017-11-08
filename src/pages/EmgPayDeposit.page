@@ -1,0 +1,9 @@
+<apex:page controller="EmgPayDepositController"  showHeader="false" sidebar="false" cache="false" standardStylesheets="false">
+
+   <apex:form >
+        <apex:pageBlock title="Hello {!$User.FirstName} !">
+            Here is your required deposit:    <apex:outputField value="{!opportunity.Deposit__c}"/>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

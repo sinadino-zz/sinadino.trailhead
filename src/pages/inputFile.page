@@ -1,0 +1,28 @@
+<apex:page standardController="Document" extensions="documentExt" showHeader="true" sidebar="true">
+    <apex:sectionHeader title="MyHeaderTitle" subtitle="MyHeaderSubTitle" />
+
+
+<apex:messages />
+
+    <apex:form id="theForm">
+
+    <apex:pageBlock title="MyPageBlockTitle">z
+      <apex:pageBlockSection >
+
+            <apex:inputFile value="{!document.body}" rendered="true" filename="{!document.name}"/>
+
+            <apex:commandButton value="Save" action="{!save}"/>
+
+          </apex:pageBlockSection>
+
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>
+
+
+<!-- <apex:pageBlockButtons location="top">
+            
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="MyPageBlockSectionTitle">
+
+        </apex:pageBlockSection> -->

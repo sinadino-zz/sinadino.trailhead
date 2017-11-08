@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>EnvironmentHubId</fullName>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>EnvironmentHubMemberId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FailureReason</fullName>
+    </fields>
+    <fields>
+        <fullName>InviteeUserName</fullName>
+    </fields>
+    <fields>
+        <fullName>IsExpired</fullName>
+    </fields>
+    <fields>
+        <fullName>IsSandbox</fullName>
+    </fields>
+    <fields>
+        <fullName>ShouldAddRelatedOrgs</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+    </fields>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

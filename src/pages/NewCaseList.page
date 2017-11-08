@@ -1,0 +1,15 @@
+<apex:page controller="NewCaseListController">
+    <apex:pageBlock >
+        <table border="0" >
+           <apex:repeat var="case" value="{!newCases}" >
+             <ul>   
+                <li><apex:outputField value="{!case.Id}"/></li>
+    
+                <li><apex:outputField value="{!case.CaseNumber}" /></li>
+                
+                <li><apex:outputLink value="https://sinadino.na17.visual.force.com/apex/Tabview?id={!case.Id}" id="theLink">Visit: {!case.CaseNumber}</apex:outputLink></li>
+             </ul>
+         </apex:repeat> 
+       </table>        
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{99DDE922-26B8-45F6-9776-7310255F16BA}") = "sinadino.trailhead", "sinadino.trailhead.sfproj", "{9B08F741-1E2E-429F-8221-0EF592184145}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B08F741-1E2E-429F-8221-0EF592184145}.Debug|x86.ActiveCfg = Debug|x86
+		{9B08F741-1E2E-429F-8221-0EF592184145}.Debug|x86.Build.0 = Debug|x86
+		{9B08F741-1E2E-429F-8221-0EF592184145}.Release|x86.ActiveCfg = Debug|x86
+		{9B08F741-1E2E-429F-8221-0EF592184145}.Release|x86.Build.0 = Debug|x86
+	EndGlobalSection
+EndGlobal

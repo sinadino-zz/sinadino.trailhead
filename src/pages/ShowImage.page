@@ -1,0 +1,13 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false">
+    <apex:stylesheet value="{! 
+        URLFOR($Resource.Bootstrap, 'bootstrap.css') }"/>
+
+    
+    <div style="margin-left: auto; margin-right: auto; width: 50%">
+        <h3>Images</h3>
+        <p>A Cat picture:  
+           <apex:image alt="cloud" title="cloud"
+               url="{!URLFOR($Resource.vfimagetest, 'cats/kitten1.jpg')}"/> 
+        </p>
+    </div>
+</apex:page>

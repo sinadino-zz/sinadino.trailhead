@@ -1,0 +1,120 @@
+<apex:page docType="HTML-5.0" id="siteHomePage"  applyHtmlTag="false" applyBodyTag="false" showHeader="false" sidebar="false" cache="false" standardStylesheets="false">
+ <html lang="en">
+    <head>
+       <meta charset="utf-8"/>
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1"/>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+       <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'/>
+<!-- Optional theme -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"/>
+       <apex:includeScript value="{!$Resource.bootstrapjs}"/>
+       <apex:includeScript value="{!$Resource.collapsescript}"/>
+       <apex:includeScript value="{!$Resource.dropdown}"/>
+
+       <title>Linvio Testing </title>
+    </head>
+    <body>
+                <div class="navbar navbar-default">
+                  <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                          <h1 style="font-family: 'Lobster', cursive;">Linvio Testing Environment</h1>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row marketing">
+                    <div class="col-sm-4">
+                      <div class="panel panel-primary">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">Events</h3>
+                         </div>
+                        <div class="panel-body">
+                          <ul class="list-group">
+                            <li class="list-group-item"><a href="{!$Site.CurrentSiteURL}evt__Sem_Detail?id=a0yo0000002K6Tm">Seminar</a></li>
+                            <li class="list-group-item"><a href="{!$Site.CurrentSiteURL}evt__Conf_Detail?id=a0yo0000002x8xi">Conference</a></li>
+                          </ul>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="panel panel-primary">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">Quotes and Invoices</h3>
+                         </div>
+                        <div class="panel-body">
+                          <ul class="list-group">
+                            <li class="list-group-item"><a href="{!$Site.CurrentSiteURL}quot__SiteInvoice?id=006o000000KqpEl">Invoice</a></li>
+                            <li class="list-group-item"><a href="{!$Site.CurrentSiteURL}quot__SiteQuoteApproval?id=006o000000KqpYd">Quote</a></li>
+                          </ul>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="panel panel-primary">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">Donations</h3>
+                         </div>
+                        <div class="panel-body">
+                          <ul class="list-group">
+                            <li class="list-group-item"><a href="https://na17.salesforce.com/a13o0000002qZwr">Free Event</a></li>
+                            <li class="list-group-item"><a href="{!$Site.CurrentSiteURL}dn8n__SiteDonation?id=a13o0000002qZwr">Donation</a></li>
+                          </ul>
+                        </div>
+                     </div>
+                    </div>
+
+                  </div>
+                  <div class="row marketing">
+                    <div class="col-sm-4">
+                      <div class="panel panel-primary">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">eStore Lite - Products</h3>
+                         </div>
+                        <div class="panel-body">
+                          <ul class="list-group">
+                            <li class="list-group-item"><a href="https://na17.salesforce.com/a0no000000Ke1RZ">Gizmo Inc</a></li>
+                            <li class="list-group-item"><a href="{!$Site.CurrentSiteURL}eslt__SiteEstoreProducts?id=a0no000000Ke1RZ">eStore Lite</a></li>
+                          </ul>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="panel panel-primary">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">eStore Lite - Subscriptions</h3>
+                         </div>
+                        <div class="panel-body">
+                          <ul class="list-group">
+                            <li class="list-group-item"><a href="#">Store Lite</a></li>
+                            <li class="list-group-item"><a href="{!$Site.CurrentSiteURL}eslt__SiteEstoreProducts?id=a0no000000Ke1RZ">eStore Pro</a></li>
+                          </ul>
+                        </div>
+                     </div>
+                    </div>
+                      <div class="col-sm-4">
+                        <div class="panel panel-primary">
+                          <div class="panel-heading">
+                             <h3 class="panel-title">Financial Force Integration Pkg</h3>
+                           </div>
+                          <div class="panel-body">
+                            <ul class="list-group">
+                              <li class="list-group-item"><a href="#">FF Integration</a></li>
+                              <li class="list-group-item"><a href="#">Coming up...</a></li>
+                            </ul>
+                          </div>
+                       </div>
+                      </div>
+
+                    </div>
+                  <footer class="footer">
+                    <div style="text-align:center;width:100%;font-size:.5em;font-weight:bold;font-family:Verdana;color:#A4A4A4;">{!$Label.site.powered_by} Linvio PaymentConnect</div>
+                  </footer>
+
+             </div>
+
+             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+        </body>
+  </html>
+</apex:page>

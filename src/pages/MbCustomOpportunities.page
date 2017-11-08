@@ -1,0 +1,199 @@
+<apex:page docType="html-5.0" controller="MobileBaseController" applyBodyTag="false" applyHtmlTag="false" cache="false" sidebar="false" showHeader="false" standardStylesheets="false">
+<html>
+<head>
+    <title>Linvio PaymentConnect</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+
+    <!--  JQuery Mobile Includes with custom theme (from Themeroller) -->
+
+    <link rel="stylesheet" href="{!URLFOR($Resource.pymt__PaymentConnectMobile,'themes/Linvio.css')}" />
+    <link rel="stylesheet" href="{!URLFOR($Resource.pymt__PaymentConnectMobile,'themes/jquery.mobile.icons.min.css')}" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+
+
+    <script>
+    // search method looping through the opportunities; not sure what is happening here jquery zone
+        $( document ).on( "pagecreate", function() {
+
+                  // cancel the search form submit so the keyboard enter does not reload the page
+                  $("#searchOppsForm").submit(function() {return false;});
+                  // set listener for enter or search button click on keyboard to invoke our own search method.
+                  $("#search-opportunities").keydown(function(e) {
+                      if (e.keyCode == 13) {
+                         findOpportunities();
+                      }
+                  });
+
+                  findOpportunities();
+
+              });
+     // instantiate an array
+        var opportunities = new Array();
+// displaying the opportunity list dynamically
+        function refreshOppList() {
+          var listItem;
+          $("#opportunityList").empty();
+          $.each(opportunities, function( index, opp ) {
+
+              //alert( index + ": " + value );
+
+
+              listItem = listItem + '<h2>'+opp.Name+'</h2><p>';
+              if (typeof opp.Probability !== 'undefined') { listItem += ''+opp.Probability+'%';}
+              if (typeof opp.StageName !== 'undefined') { listItem += ' | '+opp.StageName;}
+              if (typeof opp.pymt__Total_Amount__c !== 'undefined') { listItem += ' | '+opp.pymt__Total_Amount__c;}
+              if (typeof opp.pymt__Currency_ISO_Code__c !== 'undefined') { listItem += ' '+opp.pymt__Currency_ISO_Code__c;}
+
+              listItem += '</p>';
+
+              listItem = listItem + '</a>';
+
+              $("#opportunityList").append(listItem);
+
+          });
+          $("#opportunityList").listview('refresh');
+        }
+
+
+          function findOpportunities() {
+
+              //alert('about to start search');
+
+              var searchString = $("#search-opportunities").val();
+
+
+              loading("show");
+              var orderByField = $("#select-choice-orderby").val();
+              var direction = $("#flip-results-direction").val();
+              var itemLimit = parseFloat($("#slider-item-limit").val());
+
+              if (searchString == false) {
+                  direction = 'Desc';
+                  orderByField = 'Last Modified';
+              }
+
+
+              Visualforce.remoting.Manager.invokeAction(
+                      '{!$RemoteAction.MobileBaseController.searchOpportunities}',
+                      searchString,
+                      orderByField,
+                      direction,
+                      itemLimit,
+                      function(results, event){
+                          loading("hide");
+
+                          //alert('search returned. status = '+event.status);
+
+                          if (event.status) {
+                              opportunities = results;
+                              refreshOppList();
+
+
+                          } else if (event.type === 'exception') {
+                            $("#error-popup-message").html(event.message);
+                            $("#error-popup").popup("open", {positionTo:"window"});
+                          } else {
+                            $("#error-popup-message").html(event.message);
+                            $("#error-popup").popup("open", {positionTo:"window"});
+                          }
+                      },
+                      {escape: true}
+                  );
+
+          }
+
+
+          function loading(showOrHide) {
+              setTimeout(function(){
+                  $.mobile.loading(showOrHide);
+              }, 1);
+          }
+
+    </script>
+
+</head>
+<body>
+<div data-role="page" data-theme="a" id="opportunityListPage">
+
+    <div data-role="header" data-position="fixed">
+        <a href="#" data-rel="back" class="fawe-icon-hdr-link" ><i class="fa fa-angle-left fa-2x"></i></a>
+
+         <form id="searchOppsForm" style="max-width:60%;margin:0px auto;">
+        <input name="search-opportunities" id="search-opportunities" data-mini="true"  value="" type="search" placeholder="Search Opportunities"/>
+        </form>
+
+        <a href="#panel-reveal" class="fawe-icon-hdr-link"><i class="fa fa-gear fa-2x"></i></a>
+    </div><!-- /header -->
+
+    <div class="ui-content" role="main">
+
+   <ul id="opportunityList" data-role="listview"  data-inset="true">
+
+    </ul>
+
+
+
+    </div><!-- /content -->
+
+<div data-role="footer" data-position="fixed">
+<a href="#" class="fawe-icon-hdr-link"  onclick="javascript: window.location= window.localStorage.getItem('homePageURL');">
+<i class="fa fa-home fa-2x"></i></a>
+</div>
+
+    <div data-role="panel" data-position="right" data-display="overlay" id="panel-reveal">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+
+        </ul>
+<br/><br/>
+        <h3>Include:</h3>
+        <select name="select-multi-choice-stage" id="select-multi-choice-stage" data-native-menu="false" multiple="true">
+        <apex:repeat value="{!oppStageNameOptions}" var="stage">
+            <option value="{!stage.value}">{!stage.label}</option>
+        </apex:repeat>
+        </select>
+
+        <h3>Order Results By:</h3>
+        <select name="select-choice-orderby" id="select-choice-orderby" data-native-menu="false" >
+            <option value="Name">Name</option>
+            <option value="StageName">Stage Name</option>
+            <option value="Probability">Probability</option>
+            <option value="CreatedDate">Date Created</option>
+            <option value="LastModifiedDate">Last Modified</option>
+        </select>
+
+
+        <div class="ui-field-contain">
+            <label for="flip-results-direction"></label>
+            <select name="flip-results-direction" id="flip-results-direction" data-role="slider">
+                <option value="Desc">Desc</option>
+                <option value="Asc">Asc</option>
+            </select>
+            </div>
+
+
+
+        <h3>Max Results Size:</h3>
+        <input type="range" name="slider-item-limit" id="slider-item-limit" value="10" min="0" max="100" data-highlight="true"/>
+
+        <br/><br/>
+        <button class="ui-btn ui-corner-all ui-shadow"  onclick="javascript:findOpportunities();">Apply</button>
+    </div><!-- /panel -->
+
+
+<div data-role="popup" id="error-popup" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+  <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    <div id="error-popup-message">Message goes here.</div>
+</div><!-- /popup -->
+
+
+</div><!-- /page -->
+
+</body>
+</html>
+
+</apex:page>
